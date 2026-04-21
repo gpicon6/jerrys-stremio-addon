@@ -1,7 +1,7 @@
 ﻿const { addonBuilder, serveHTTP } = require('stremio-addon-sdk')
 const fetch = require('node-fetch')
 
-const TMDB_API_KEY = 'ec86a433b6015ca7b8512a4a76633ae5'
+const TMDB_API_KEY = process.env.TMDB_API_KEY
 const PORT = 7000
 
 const TMDB_GENRE_IDS = {
